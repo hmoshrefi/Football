@@ -3,3 +3,4 @@
   "consumer_secret": "YAHOO_DEVELOPER_APP_CONSUMER_SECRET_STRING"
 }
 pip install yfpy
+git clone git@github.com:uberfastman/yfpy.git
