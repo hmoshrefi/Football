@@ -5,3 +5,22 @@
 pip install yfpy
 git clone git@github.com:uberfastman/yfpy.git
 classYahooFantasySportsQuery(auth_dir, league_id, game_id=None, game_code='nfl', offline=False, all_output_as_json_str=False, consumer_key=None, consumer_secret=None, browser_callback=True, retries=3, backoff=0)[source]
+from pathlib import Path
+from yfpy.query import YahooFantasySportsQuery
+query = YahooFantasySportsQuery(Path("/path/to/auth/directory"), league_id="######")
+query.get_all_yahoo_fantasy_game_keys()
+[
+  Game({
+    "code": "nfl",
+    "game_id": "50",
+    "game_key": "50",
+    "is_game_over": 1,
+    "is_offseason": 1,
+    "is_registration_over": 1,
+    "name": "Football",
+    "season": "1999",
+    "type": "full",
+    "url": "https://football.fantasysports.yahoo.com/archive/nfl/1999"
+  }),
+  ...,
+  Game({...})
