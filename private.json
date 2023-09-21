@@ -4,3 +4,4 @@
 }
 pip install yfpy
 git clone git@github.com:uberfastman/yfpy.git
+classYahooFantasySportsQuery(auth_dir, league_id, game_id=None, game_code='nfl', offline=False, all_output_as_json_str=False, consumer_key=None, consumer_secret=None, browser_callback=True, retries=3, backoff=0)[source]
